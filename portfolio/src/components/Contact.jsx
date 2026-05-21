@@ -1,30 +1,48 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 function Contact() {
+
   return (
+
     <section id="contact">
+
       <h2>Contact Me</h2>
 
-      <form className="contact-form">
+      <div className="contact-container">
 
-        <input
-          type="text"
-          placeholder="Enter Your Name"
-        />
+        <div className="contact-box">
 
-        <input
-          type="email"
-          placeholder="Enter Your Email"
-        />
+          <p>
+            <FaEnvelope className="icon" />
+            manpatel1315@gmail.com
+          </p>
 
-        <textarea
-          placeholder="Enter Your Message"
-          rows="6"
-        ></textarea>
+          <p>
+            <FaGithub className="icon" />
+            github.com/mxitcodes
+          </p>
 
-        <button type="submit">
-          Send Message
-        </button>
+          <p>
+            <FaLinkedin className="icon" />
+            linkedin.com/in/manpatel
+          </p>
 
-      </form>
+        </div>
+
+        <form className="contact-form">
+
+          <input type="text" placeholder="Enter Your Name" />
+
+          <input type="email" placeholder="Enter Your Email" />
+
+          <textarea rows="6" placeholder="Enter Your Message"></textarea>
+
+          <button type="submit">Send Message</button>
+
+        </form>
+
+      </div>
+
     </section>
   );
 }
